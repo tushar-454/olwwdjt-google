@@ -1,30 +1,28 @@
-import { Geist, Geist_Mono, DM_Sans } from "next/font/google"
-
-import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
+import Header from "@/components/common/header";
+import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
+import { DM_Sans } from "next/font/google";
+import "./globals.css";
 
-const dmSans = DM_Sans({subsets:['latin'],variable:'--font-sans'})
-
-const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-})
+const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-sans" });
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode
+    children: React.ReactNode;
 }>) {
-  return (
-    <html
-      lang="en"
-      suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", dmSans.variable)}
-    >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
-    </html>
-  )
+    return (
+        <html
+            lang="en"
+            suppressHydrationWarning
+            className={cn("antialiased", "font-sans", dmSans.variable)}
+        >
+            <body>
+                <ThemeProvider>
+                    <Header />
+                    {children}
+                </ThemeProvider>
+            </body>
+        </html>
+    );
 }
