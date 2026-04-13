@@ -1,3 +1,4 @@
+import GettingStart from "@/components/getting-start/getting-start";
 import Hero from "@/components/hero/hero";
 import PartnerLogosStrip from "@/components/partner-logos-strip/partner-logos-strip";
 import Pricing from "@/components/pricing/pricing";
@@ -12,6 +13,7 @@ export default async function Page() {
             <Services />
             <Pricing />
             <Tools />
+            <GettingStart />
         </main>
     );
 }
