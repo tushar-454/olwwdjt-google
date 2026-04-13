@@ -5,7 +5,7 @@ import ServiceCard from "./service-card";
 
 export default function Services() {
     return (
-        <section>
+        <section className="py-10" id="services">
             <Container className="max-w-310">
                 <SectionHead
                     title="Our"
