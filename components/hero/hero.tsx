@@ -5,7 +5,7 @@ import FloatingItems from "./floating-items";
 
 export default function Hero() {
     return (
-        <section className="flex h-132 items-end justify-center bg-[url('/assets/herobg.png')] bg-cover bg-center sm:h-145">
+        <section className="mb-20 flex h-132 items-end justify-center bg-[url('/assets/herobg.png')] bg-cover bg-center sm:h-145">
             <Container className="relative w-auto rounded-[923px] bg-[rgba(255,255,255,0.62)] py-16 lg:max-w-230.75 dark:bg-[rgba(255,255,255,0.05)]">
                 {/* floating items (logo, dot) */}
                 <FloatingItems />
