@@ -1,3 +1,4 @@
+import ChooseUs from "@/components/chooseus/chooseus";
 import GettingStart from "@/components/getting-start/getting-start";
 import Hero from "@/components/hero/hero";
 import PartnerLogosStrip from "@/components/partner-logos-strip/partner-logos-strip";
@@ -14,6 +15,7 @@ export default async function Page() {
             <Pricing />
             <Tools />
             <GettingStart />
+            <ChooseUs />
         </main>
     );
 }
