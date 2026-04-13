@@ -12,7 +12,7 @@ const logos = [
 
 export default function PartnerLogosStrip() {
     return (
-        <section className="py-20">
+        <section className="py-10">
             <p className="text-center text-[20px] leading-normal font-semibold">
                 Trusted by leaders in 50+ industries
             </p>
