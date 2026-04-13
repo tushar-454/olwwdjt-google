@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function FloatingItems() {
     return (
-        <div>
+        <div className="hidden lg:block">
             {/* airbnb logo  */}
             <Image
                 src="/assets/airbnb.png"
