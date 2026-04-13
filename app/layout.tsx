@@ -1,10 +1,11 @@
 import Header from "@/components/common/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
-import { DM_Sans } from "next/font/google";
+import { DM_Sans, Manrope } from "next/font/google";
 import "./globals.css";
 
 const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-sans" });
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
 
 export const metadata = {
     title: "Google",
@@ -21,7 +22,12 @@ export default function RootLayout({
         <html
             lang="en"
             suppressHydrationWarning
-            className={cn("antialiased", "font-sans", dmSans.variable)}
+            className={cn(
+                "antialiased",
+                "font-sans",
+                dmSans.variable,
+                manrope.variable
+            )}
         >
             <body>
                 <ThemeProvider>
