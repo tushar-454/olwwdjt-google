@@ -1,34 +1,16 @@
-"use client";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Switch } from "../ui/switch";
 
-export default function PriceUnitSwitch() {
-    const searchParams = useSearchParams();
-    const router = useRouter();
-    const pathname = usePathname();
-
-    const isYearly = searchParams.get("unit") === "yearly";
-
-    function handleSwitchChange(checked: boolean) {
-        const params = new URLSearchParams(searchParams.toString());
-
-        if (checked) {
-            params.set("unit", "yearly");
-        } else {
-            params.delete("unit");
-        }
-
-        const query = params.toString();
-        const nextUrl = query
-            ? `${pathname}?${query}#pricing`
-            : `${pathname}#pricing`;
-        router.push(nextUrl);
-    }
-
+export default function PriceUnitSwitch({
+    isYearly,
+    setIsYearly,
+}: {
+    isYearly: boolean;
+    setIsYearly: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
     return (
         <div className="relative top-9.5 bottom-23.25 mx-auto mb-40 flex max-w-fit items-center justify-center gap-6 sm:mb-32">
             <span>Pay Monthly</span>
-            <Switch checked={isYearly} onCheckedChange={handleSwitchChange} />
+            <Switch checked={isYearly} onCheckedChange={setIsYearly} />
             <span>Pay Yearly</span>
             {/* arrow and discount text */}
             <div className="absolute top-5 right-0 sm:-top-5 sm:-right-32">
