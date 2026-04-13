@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 
 export default function ServiceCard({ service }: { service: TService }) {
     return (
-        <Card className="rounded-[13px] border border-[#FAC4D2]">
+        <Card className="rounded-[13px] ring-primary/50">
             <CardContent className="flex flex-col gap-8">
                 <div className="flex h-24 w-24 items-center justify-center">
                     <Image
