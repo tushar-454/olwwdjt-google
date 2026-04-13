@@ -6,6 +6,12 @@ import "./globals.css";
 
 const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-sans" });
 
+export const metadata = {
+    title: "Google",
+    description:
+        "Google is a technology company that specializes in internet-related services and products, including search engines, online advertising, cloud computing, software, and hardware.",
+};
+
 export default function RootLayout({
     children,
 }: Readonly<{
