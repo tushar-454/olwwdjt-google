@@ -3,19 +3,13 @@ import PartnerLogosStrip from "@/components/partner-logos-strip/partner-logos-st
 import Pricing from "@/components/pricing/pricing";
 import Services from "@/components/services/services";
 
-export default async function Page({
-    searchParams,
-}: {
-    searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-}) {
-    const { unit } = await searchParams;
-
+export default async function Page() {
     return (
         <main>
             <Hero />
             <PartnerLogosStrip />
             <Services />
-            <Pricing isYearly={unit === "yearly"} />
+            <Pricing />
         </main>
     );
 }
