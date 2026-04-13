@@ -16,7 +16,7 @@ export default function SectionHead({
     descriptionClassName,
 }: SectionHeadProps) {
     return (
-        <div className="flex flex-col items-center gap-3.5">
+        <div className="flex flex-col items-center gap-3.5 p-4">
             <h1
                 className={cn(
                     "text-center text-[32px] leading-normal font-bold",
