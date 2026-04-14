@@ -1,7 +1,10 @@
 "use client";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes";
 import * as React from "react";
+import { useEffect } from "react";
 import CustomCursor from "./common/custom-cursor";
 import SmoothScroll from "./common/smooth-scroll";
 
@@ -9,6 +12,15 @@ function ThemeProvider({
     children,
     ...props
 }: React.ComponentProps<typeof NextThemesProvider>) {
+    useEffect(() => {
+        AOS.init({
+            // disable: "mobile",
+            offset: 150,
+            duration: 600,
+            easing: "ease-in-sine",
+            once: true,
+        });
+    }, []);
     return (
         <NextThemesProvider
             attribute="class"
