@@ -2,6 +2,7 @@
 
 import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes";
 import * as React from "react";
+import CustomCursor from "./common/custom-cursor";
 import SmoothScroll from "./common/smooth-scroll";
 
 function ThemeProvider({
@@ -19,6 +20,7 @@ function ThemeProvider({
             <ThemeHotkey />
             {children}
             <SmoothScroll />
+            <CustomCursor />
         </NextThemesProvider>
     );
 }
