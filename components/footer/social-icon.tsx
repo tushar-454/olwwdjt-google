@@ -39,7 +39,7 @@ export default function SocialIcon() {
                         alt={icon.alt}
                         width={24}
                         height={24}
-                        className="h-5 w-5 cursor-pointer object-contain"
+                        className="h-5 w-5 cursor-pointer object-contain dark:invert"
                     />
                 </Link>
             ))}

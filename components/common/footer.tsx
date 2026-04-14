@@ -10,7 +10,7 @@ export default function Footer() {
                 {/* left side  */}
                 <div className="col-span-2">
                     <Logo />
-                    <p className="my-5 mb-8 font-plusja text-gray-600">
+                    <p className="my-5 mb-8 font-plusja text-gray-600 dark:text-gray-300">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nullam dictum aliquet accumsan porta lectus ridiculus in
                         mattis. Netus sodales in volutpat ullamcorper amet

@@ -22,7 +22,7 @@ export default function PricingCard({ plan, isYearly }: PricingCardProps) {
         <Card
             data-aos="zoom-in-up"
             className={cn(
-                "rounded-[10px] py-7 font-manrope ring-primary/50",
+                "rounded-[10px] py-7 font-manrope ring-primary/50 dark:ring-primary/30",
                 plan.isHighlighted ? "bg-primary" : ""
             )}
         >
@@ -30,7 +30,9 @@ export default function PricingCard({ plan, isYearly }: PricingCardProps) {
                 <CardTitle
                     className={cn(
                         "text-[22px] leading-normal font-bold",
-                        plan.isHighlighted ? "text-white" : "text-neutral-800"
+                        plan.isHighlighted
+                            ? "text-white"
+                            : "text-neutral-800 dark:text-neutral-50"
                     )}
                 >
                     {plan.type}
@@ -40,7 +42,7 @@ export default function PricingCard({ plan, isYearly }: PricingCardProps) {
                         "text-base leading-normal font-normal",
                         plan.isHighlighted
                             ? "text-neutral-50"
-                            : "text-neutral-500"
+                            : "text-neutral-500 dark:text-neutral-200"
                     )}
                 >
                     {plan.description}
@@ -53,7 +55,7 @@ export default function PricingCard({ plan, isYearly }: PricingCardProps) {
                             "text-[56px] leading-normal font-semibold",
                             plan.isHighlighted
                                 ? "text-white"
-                                : "text-neutral-800"
+                                : "text-neutral-800 dark:text-neutral-50"
                         )}
                     >
                         ${price}
@@ -63,7 +65,7 @@ export default function PricingCard({ plan, isYearly }: PricingCardProps) {
                             "text-base leading-normal font-light",
                             plan.isHighlighted
                                 ? "text-neutral-50"
-                                : "text-neutral-500"
+                                : "text-neutral-500 dark:text-neutral-200"
                         )}
                     >
                         / {isYearly ? "Year" : "Month"}
@@ -72,7 +74,10 @@ export default function PricingCard({ plan, isYearly }: PricingCardProps) {
                 <Link
                     href={"#"}
                     className={cn(
-                        "my-4 block w-full rounded-lg border border-primary bg-white py-2.5 text-center text-base leading-normal font-semibold text-primary"
+                        "my-4 block w-full rounded-lg border border-primary py-2.5 text-center text-base leading-normal font-semibold text-primary dark:border-primary/50",
+                        plan.isHighlighted
+                            ? "bg-white"
+                            : "bg-white dark:bg-white/5 dark:text-neutral-200"
                     )}
                 >
                     {plan.ctaLabel}

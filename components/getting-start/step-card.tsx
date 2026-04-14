@@ -10,7 +10,7 @@ export default function StepCard({ step, index }: StepCardProps) {
             data-aos-delay={index * 50}
             className="relative"
         >
-            <span className="absolute -top-5 -left-5 inline-flex h-16 w-16 items-center justify-center rounded-full border-4 border-primary bg-white text-[30px] leading-normal font-medium">
+            <span className="absolute -top-5 -left-5 inline-flex h-16 w-16 items-center justify-center rounded-full border-4 border-primary bg-white text-[30px] leading-normal font-medium dark:border-primary/60 dark:bg-[#161616]">
                 0{++index}
             </span>
 
@@ -20,6 +20,7 @@ export default function StepCard({ step, index }: StepCardProps) {
                     alt={step.instruction}
                     width={64}
                     height={64}
+                    className="dark:invert"
                 />
             </div>
             <p className="mx-auto mt-5 max-w-63.75 text-center text-xl leading-normal font-semibold">

@@ -23,7 +23,7 @@ export default function PartnerLogosStrip() {
             </p>
             <div
                 data-aos="fade-up"
-                className="relative mt-9 overflow-hidden bg-[#F6F6F6] py-10"
+                className="relative mt-9 overflow-hidden bg-[#F6F6F6] py-10 dark:bg-[#161616]"
             >
                 <div className="logo-marquee-track flex w-max items-center gap-12 px-5">
                     {loopedLogos.map((logo, i) => (
@@ -36,7 +36,7 @@ export default function PartnerLogosStrip() {
                                 alt={`${logo.split("/").pop()?.split(".")[0]} logo`}
                                 width={120}
                                 height={60}
-                                className="h-auto w-28 object-contain"
+                                className="h-auto w-28 object-contain dark:invert"
                             />
                         </div>
                     ))}

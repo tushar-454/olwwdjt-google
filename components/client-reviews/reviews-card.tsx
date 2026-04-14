@@ -16,7 +16,7 @@ export default function ReviewsCard({
             data-aos="fade-up"
             data-aos-delay={index * 50}
             className={cn(
-                "rounded-[11px] ring-[#F6F6F6] transition-shadow hover:shadow-[0_4px_77.4px_0_rgba(136,136,136,0.41)]"
+                "rounded-[11px] ring-[#F6F6F6] transition-shadow hover:shadow-[0_4px_77.4px_0_rgba(136,136,136,0.41)] dark:ring-[#242424]"
             )}
         >
             <CardContent className="flex flex-col gap-5 md:flex-row md:items-center">

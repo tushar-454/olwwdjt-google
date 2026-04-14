@@ -20,7 +20,7 @@ export default function NavItem({ item }: NavItemProps) {
                 className={cn(
                     isActive
                         ? "font-bold text-primary underline underline-offset-8"
-                        : "font-normal text-[#1E1E1E] dark:text-[#707070]",
+                        : "font-normal text-[#1E1E1E] dark:text-gray-300",
                     "text-[18px] leading-[150%] transition-colors duration-100 hover:text-primary/90"
                 )}
             >

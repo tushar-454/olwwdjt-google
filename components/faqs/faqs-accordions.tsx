@@ -20,7 +20,7 @@ export default function FAQsAccordions() {
                     data-aos-delay={index * 50}
                     key={faq.id}
                     value={`item-${index}`}
-                    className="border-primary/50 py-0 min-[500px]:py-2"
+                    className="border-primary/50 py-0 min-[500px]:py-2 dark:border-primary/30"
                 >
                     <AccordionTrigger className="text-base leading-7 font-bold hover:no-underline **:data-[slot=accordion-trigger-icon]:size-6 **:data-[slot=accordion-trigger-icon]:text-primary min-[500px]:text-lg">
                         {faq.question}

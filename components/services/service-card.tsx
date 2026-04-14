@@ -15,7 +15,7 @@ export default function ServiceCard({
         <Card
             data-aos="fade-up"
             data-aos-delay={index * 50}
-            className="rounded-[13px] ring-primary/50"
+            className="rounded-[13px] ring-primary/50 dark:ring-primary/30"
         >
             <CardContent className="flex flex-col gap-8">
                 <div className="flex h-24 w-24 items-center justify-center">
@@ -28,10 +28,10 @@ export default function ServiceCard({
                     />
                 </div>
                 <div className="flex flex-col gap-3.5">
-                    <h4 className="text-2xl leading-[125%] font-bold text-[#1E1E1E] sm:max-w-65">
+                    <h4 className="text-2xl leading-[125%] font-bold text-[#1E1E1E] sm:max-w-65 dark:text-[#EEEEEE]">
                         {service.title}
                     </h4>
-                    <p className="text-sm leading-normal font-medium">
+                    <p className="text-sm leading-normal font-medium dark:text-[#BDBDBD]">
                         {service.description}
                     </p>
                 </div>

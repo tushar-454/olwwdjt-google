@@ -19,7 +19,9 @@ export default function FeaturesLists({
                     key={feature.id}
                     className={cn(
                         "flex items-center gap-2",
-                        isHighlighted ? "text-neutral-50" : "text-neutral-500"
+                        isHighlighted
+                            ? "text-neutral-50"
+                            : "text-neutral-500 dark:text-neutral-200"
                     )}
                 >
                     {feature.availableIn.includes(type) ? (

@@ -8,7 +8,7 @@ export default function CrossIcon({
     return (
         <span
             className={cn(
-                "-mt-px inline-flex h-6 w-6 items-center justify-center rounded-full",
+                "-mt-px inline-flex h-6 w-6 items-center justify-center rounded-full dark:bg-neutral-400",
                 isHighlighted ? "bg-white" : "bg-neutral-50"
             )}
         >
