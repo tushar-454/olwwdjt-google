@@ -18,9 +18,9 @@ export default function FAQsAccordions() {
                 <AccordionItem
                     key={faq.id}
                     value={`item-${index}`}
-                    className="border-primary/50 py-2"
+                    className="border-primary/50 py-0 min-[500px]:py-2"
                 >
-                    <AccordionTrigger className="text-lg leading-7 font-bold hover:no-underline **:data-[slot=accordion-trigger-icon]:size-6 **:data-[slot=accordion-trigger-icon]:text-primary">
+                    <AccordionTrigger className="text-base leading-7 font-bold hover:no-underline **:data-[slot=accordion-trigger-icon]:size-6 **:data-[slot=accordion-trigger-icon]:text-primary min-[500px]:text-lg">
                         {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="leading-6 text-[#606060]">
