@@ -1,6 +1,7 @@
 import ChooseUs from "@/components/chooseus/chooseus";
 import ClientReviews from "@/components/client-reviews/client-reviews";
 import FAQs from "@/components/faqs/faqs";
+import GetInTouch from "@/components/get-in-touch/get-in-touch";
 import GettingStart from "@/components/getting-start/getting-start";
 import Hero from "@/components/hero/hero";
 import PartnerLogosStrip from "@/components/partner-logos-strip/partner-logos-strip";
@@ -20,6 +21,7 @@ export default async function Page() {
             <ChooseUs />
             <ClientReviews />
             <FAQs />
+            <GetInTouch />
         </main>
     );
 }
