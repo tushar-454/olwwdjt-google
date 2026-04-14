@@ -148,3 +148,34 @@
     animation: logo-marquee 10s linear infinite;
     will-change: transform;
 }
+
+@keyframes littleShakeBottom {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes littleShakeUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.shake-bottom {
+    animation: littleShakeBottom 1.5s infinite ease-in-out;
+}
+
+.shake-up {
+    animation: littleShakeUp 1.5s infinite ease-in-out;
+}
