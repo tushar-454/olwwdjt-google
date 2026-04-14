@@ -5,7 +5,7 @@ import Container from "./container";
 
 export default function Footer() {
     return (
-        <footer>
+        <footer data-aos="fade-up">
             <Container className="grid max-w-360 grid-cols-1 gap-10 pt-32 pb-14 md:grid-cols-5">
                 {/* left side  */}
                 <div className="col-span-2">

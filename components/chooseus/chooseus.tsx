@@ -12,7 +12,7 @@ const facilities = [
 
 export default function ChooseUs() {
     return (
-        <section className="py-10" id="chooseus">
+        <section data-aos="fade-up" className="py-10" id="chooseus">
             <Container className="grid max-w-310 grid-cols-1 gap-6.25 rounded-[33px] bg-primary/20 px-5 py-11 md:grid-cols-2 md:gap-20 lg:grid-cols-5">
                 {/* left part  */}
                 <div className="space-y-7 md:self-center md:pl-11 lg:col-span-2">

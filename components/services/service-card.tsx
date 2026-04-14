@@ -4,9 +4,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../ui/button";
 
-export default function ServiceCard({ service }: { service: TService }) {
+export default function ServiceCard({
+    service,
+    index,
+}: {
+    service: TService;
+    index: number;
+}) {
     return (
-        <Card className="rounded-[13px] ring-primary/50">
+        <Card
+            data-aos="fade-up"
+            data-aos-delay={index * 50}
+            className="rounded-[13px] ring-primary/50"
+        >
             <CardContent className="flex flex-col gap-8">
                 <div className="flex h-24 w-24 items-center justify-center">
                     <Image

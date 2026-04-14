@@ -15,10 +15,16 @@ export default function PartnerLogosStrip() {
 
     return (
         <section className="py-10">
-            <p className="text-center text-[20px] leading-normal font-semibold">
+            <p
+                data-aos="fade-down"
+                className="text-center text-[20px] leading-normal font-semibold"
+            >
                 Trusted by leaders in 50+ industries
             </p>
-            <div className="relative mt-9 overflow-hidden bg-[#F6F6F6] py-10">
+            <div
+                data-aos="fade-up"
+                className="relative mt-9 overflow-hidden bg-[#F6F6F6] py-10"
+            >
                 <div className="logo-marquee-track flex w-max items-center gap-12 px-5">
                     {loopedLogos.map((logo, i) => (
                         <div

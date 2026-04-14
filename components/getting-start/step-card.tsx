@@ -5,7 +5,11 @@ type StepCardProps = { step: TGettingStartStep; index: number };
 
 export default function StepCard({ step, index }: StepCardProps) {
     return (
-        <div className="relative">
+        <div
+            data-aos="fade-up"
+            data-aos-delay={index * 50}
+            className="relative"
+        >
             <span className="absolute -top-5 -left-5 inline-flex h-16 w-16 items-center justify-center rounded-full border-4 border-primary bg-white text-[30px] leading-normal font-medium">
                 0{++index}
             </span>

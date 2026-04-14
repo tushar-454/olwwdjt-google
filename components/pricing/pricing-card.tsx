@@ -20,6 +20,7 @@ export default function PricingCard({ plan, isYearly }: PricingCardProps) {
 
     return (
         <Card
+            data-aos="zoom-in-up"
             className={cn(
                 "rounded-[10px] py-7 font-manrope ring-primary/50",
                 plan.isHighlighted ? "bg-primary" : ""

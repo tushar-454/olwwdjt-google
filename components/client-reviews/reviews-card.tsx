@@ -4,9 +4,17 @@ import Image from "next/image";
 import { Card, CardContent } from "../ui/card";
 import RatingStars from "./rating-stars";
 
-export default function ReviewsCard({ review }: { review: TReviewCard }) {
+export default function ReviewsCard({
+    review,
+    index,
+}: {
+    review: TReviewCard;
+    index: number;
+}) {
     return (
         <Card
+            data-aos="fade-up"
+            data-aos-delay={index * 50}
             className={cn(
                 "rounded-[11px] ring-[#F6F6F6] transition-shadow hover:shadow-[0_4px_77.4px_0_rgba(136,136,136,0.41)]"
             )}

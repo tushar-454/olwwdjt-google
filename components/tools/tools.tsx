@@ -15,8 +15,8 @@ export default function Tools() {
             {/* services grid content */}
             <div className="mt-24 bg-[#F6F6F6] py-9.5">
                 <Container className="grid max-w-5xl grid-cols-1 gap-6.25 min-[500px]:grid-cols-2 md:grid-cols-3">
-                    {tools.map((tool) => (
-                        <ToolCard key={tool.id} tool={tool} />
+                    {tools.map((tool, index) => (
+                        <ToolCard key={tool.id} index={index} tool={tool} />
                     ))}
                 </Container>
             </div>

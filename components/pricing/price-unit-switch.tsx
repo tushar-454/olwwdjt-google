@@ -8,7 +8,10 @@ export default function PriceUnitSwitch({
     setIsYearly: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
     return (
-        <div className="relative top-9.5 bottom-23.25 mx-auto mb-40 flex max-w-fit items-center justify-center gap-6 sm:mb-32">
+        <div
+            data-aos="fade-up"
+            className="relative top-9.5 bottom-23.25 mx-auto mb-40 flex max-w-fit items-center justify-center gap-6 sm:mb-32"
+        >
             <span>Pay Monthly</span>
             <Switch checked={isYearly} onCheckedChange={setIsYearly} />
             <span>Pay Yearly</span>

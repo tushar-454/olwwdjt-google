@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export default function GetInTouch() {
     return (
-        <section className="py-10" id="get-in-touch">
+        <section data-aos="zoom-in" className="py-10" id="get-in-touch">
             <Container className="flex max-w-3xl flex-col items-center justify-center gap-7">
                 {/* group avatar  */}
                 <div className="flex items-center justify-center -space-x-3">

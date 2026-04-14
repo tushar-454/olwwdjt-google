@@ -16,6 +16,8 @@ export default function FAQsAccordions() {
         >
             {faqs.map((faq, index) => (
                 <AccordionItem
+                    data-aos="fade-up"
+                    data-aos-delay={index * 50}
                     key={faq.id}
                     value={`item-${index}`}
                     className="border-primary/50 py-0 min-[500px]:py-2"
