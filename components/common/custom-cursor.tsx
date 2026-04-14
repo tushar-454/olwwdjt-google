@@ -5,8 +5,30 @@ import { useEffect, useState } from "react";
 export default function CustomCursor() {
     const [pos, setPos] = useState({ x: 0, y: 0 });
     const [isInteractive, setIsInteractive] = useState(false);
+    const [isCursorEnabled, setIsCursorEnabled] = useState(false);
 
     useEffect(() => {
+        const mediaQuery = window.matchMedia(
+            "(hover: hover) and (pointer: fine)"
+        );
+
+        const updateCursorSupport = () => {
+            setIsCursorEnabled(mediaQuery.matches);
+        };
+
+        updateCursorSupport();
+
+        mediaQuery.addEventListener("change", updateCursorSupport);
+        return () => {
+            mediaQuery.removeEventListener("change", updateCursorSupport);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!isCursorEnabled) {
+            return;
+        }
+
         const move = (e: MouseEvent) => {
             setPos({ x: e.clientX, y: e.clientY });
 
@@ -19,7 +41,11 @@ export default function CustomCursor() {
 
         window.addEventListener("mousemove", move);
         return () => window.removeEventListener("mousemove", move);
-    }, []);
+    }, [isCursorEnabled]);
+
+    if (!isCursorEnabled) {
+        return null;
+    }
 
     return (
         <Image
