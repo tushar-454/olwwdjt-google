@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function FooterColumn({ column }: { column: FooterColumns }) {
     return (
-        <div className="justify-self-center">
+        <div className="md:justify-self-center">
             <h4 className="leading-6 font-bold text-gray-900">{column}</h4>
             <ul className="mt-5">
                 {footerColumnsData[column].map((link) => (
