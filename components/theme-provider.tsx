@@ -2,6 +2,7 @@
 
 import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes";
 import * as React from "react";
+import SmoothScroll from "./common/smooth-scroll";
 
 function ThemeProvider({
     children,
@@ -17,6 +18,7 @@ function ThemeProvider({
         >
             <ThemeHotkey />
             {children}
+            <SmoothScroll />
         </NextThemesProvider>
     );
 }
