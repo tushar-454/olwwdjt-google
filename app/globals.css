@@ -179,3 +179,18 @@
 .shake-up {
     animation: littleShakeUp 1.5s infinite ease-in-out;
 }
+
+@layer components {
+    .grid-background {
+        background-image:
+            linear-gradient(0deg, #e5e5ea 2px, transparent 2px),
+            linear-gradient(90deg, #e5e5ea 2px, transparent 2px);
+        background-size: 90px 90px;
+        background-position: 0 0;
+    }
+    .dark .grid-background {
+        background-image:
+            linear-gradient(0deg, #222222 2px, transparent 2px),
+            linear-gradient(90deg, #222222 2px, transparent 2px);
+    }
+}

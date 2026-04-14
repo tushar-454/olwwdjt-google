@@ -7,7 +7,7 @@ export default function Hero() {
     return (
         <section
             data-aos="fade-up"
-            className="mb-20 flex h-132 items-end justify-center bg-[url('/assets/herobg.png')] bg-cover bg-center sm:h-145"
+            className="grid-background mb-20 flex h-132 items-end justify-center sm:h-145"
         >
             <Container className="relative w-auto rounded-[923px] bg-[rgba(255,255,255,0.62)] py-16 lg:max-w-230.75 dark:bg-[rgba(255,255,255,0.05)]">
                 {/* floating items (logo, dot) */}
