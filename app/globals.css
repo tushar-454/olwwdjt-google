@@ -129,6 +129,10 @@
     html {
         @apply scroll-smooth font-sans;
     }
+    /* customize selection  */
+    ::selection {
+        @apply bg-primary text-primary-foreground;
+    }
 }
 
 @keyframes logo-marquee {
