@@ -11,22 +11,30 @@ const logos = [
 ];
 
 export default function PartnerLogosStrip() {
+    const loopedLogos = [...logos, ...logos];
+
     return (
         <section className="py-10">
             <p className="text-center text-[20px] leading-normal font-semibold">
                 Trusted by leaders in 50+ industries
             </p>
-            <div className="mt-9 flex w-full flex-wrap items-center justify-evenly gap-15 bg-[#F6F6F6] px-5 py-10">
-                {logos.map((logo, i) => (
-                    <Image
-                        key={i}
-                        src={logo}
-                        alt={`${logo.split("/").pop()?.split(".")[0]} logo`}
-                        width={120}
-                        height={60}
-                        className="h-auto w-28 object-contain"
-                    />
-                ))}
+            <div className="relative mt-9 overflow-hidden bg-[#F6F6F6] py-10">
+                <div className="logo-marquee-track flex w-max items-center gap-12 px-5">
+                    {loopedLogos.map((logo, i) => (
+                        <div
+                            key={`${logo}-${i}`}
+                            className="flex min-w-36 shrink-0 items-center justify-center"
+                        >
+                            <Image
+                                src={logo}
+                                alt={`${logo.split("/").pop()?.split(".")[0]} logo`}
+                                width={120}
+                                height={60}
+                                className="h-auto w-28 object-contain"
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );
