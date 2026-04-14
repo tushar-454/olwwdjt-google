@@ -1,3 +1,4 @@
+import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
@@ -33,6 +34,7 @@ export default function RootLayout({
                 <ThemeProvider>
                     <Header />
                     {children}
+                    <Footer />
                 </ThemeProvider>
             </body>
         </html>
