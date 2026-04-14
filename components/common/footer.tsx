@@ -10,7 +10,7 @@ export default function Footer() {
                 {/* left side  */}
                 <div className="col-span-2">
                     <Logo />
-                    <p className="my-5 text-gray-600">
+                    <p className="my-5 mb-8 font-plusja text-gray-600">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Nullam dictum aliquet accumsan porta lectus ridiculus in
                         mattis. Netus sodales in volutpat ullamcorper amet
@@ -22,7 +22,7 @@ export default function Footer() {
                 <FooterColumns />
             </Container>
             {/* bottom footer copyright  */}
-            <div className="bg-[#230B41] p-6 text-center text-sm leading-5.5 text-white">
+            <div className="bg-[#230B41] p-6 text-center font-poppins text-sm leading-5.5 text-white">
                 © Copyright 2026, All Rights Reserved by OLW
             </div>
         </footer>
