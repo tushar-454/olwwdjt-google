@@ -5,7 +5,7 @@ import FAQsAccordions from "./faqs-accordions";
 export default function FAQs() {
     return (
         <section className="mt-20 py-10" id="faqs">
-            <Container className="max-w-3xl">
+            <Container className="max-w-7xl rounded-lg bg-[#F9FAFB] dark:bg-[#161616]">
                 <SectionHead
                     title="Frequently asked"
                     highlightedTitle="questions"

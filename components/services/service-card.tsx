@@ -15,7 +15,7 @@ export default function ServiceCard({
         <Card
             data-aos="fade-up"
             data-aos-delay={index * 50}
-            className="rounded-[13px] ring-primary/50 dark:ring-primary/30"
+            className="rounded-[13px] ring-primary/50 transition-shadow hover:shadow-[0_4px_90.3px_0_rgba(215,205,207,0.47)] dark:ring-primary/30 dark:hover:shadow-none"
         >
             <CardContent className="flex flex-col gap-8">
                 <div className="flex h-24 w-24 items-center justify-center">

@@ -12,7 +12,7 @@ export default function FAQsAccordions() {
             type="single"
             collapsible
             defaultValue="item-0"
-            className="mt-20 w-full"
+            className="mx-auto mt-20 max-w-3xl"
         >
             {faqs.map((faq, index) => (
                 <AccordionItem
