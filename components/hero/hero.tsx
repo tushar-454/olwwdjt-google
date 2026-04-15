@@ -27,7 +27,7 @@ export default function Hero() {
                         exercitation ullamco laboris nisi ut aliquip ex ea
                         commodo consequat.{" "}
                     </p>
-                    <ScheduleMeetingBtn showAlways />
+                    <ScheduleMeetingBtn className="inline-flex" />
                     <Link
                         href="#pricing"
                         className="text-center text-sm font-medium underline underline-offset-2"
