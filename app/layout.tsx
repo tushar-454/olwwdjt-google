@@ -17,10 +17,45 @@ const plusja = Plus_Jakarta_Sans({
     variable: "--font-plusja",
 });
 
-export const metadata = {
-    title: "Google",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    metadataBase: new URL(
+        process.env.NEXT_PUBLIC_SITE_URL || "https://olwwdjt-google.vercel.app"
+    ),
+    title: {
+        default: "Google | Airbnb Assistants for Property Management",
+        template: "%s | Google",
+    },
     description:
-        "Google is a technology company that specializes in internet-related services and products, including search engines, online advertising, cloud computing, software, and hardware.",
+        "Manage your Airbnb properties with ease. Google provides AI-driven Airbnb assistants for efficient property management, streamlining your workflow and maximizing your earnings.",
+    openGraph: {
+        title: "Google | Airbnb Assistants for Property Management",
+        description:
+            "Manage your Airbnb properties with ease. Google provides AI-driven Airbnb assistants for efficient property management, streamlining your workflow and maximizing your earnings.",
+        url: "/",
+        siteName: "Google",
+        images: [
+            {
+                url: "/assets/og.png",
+                width: 1200,
+                height: 630,
+                alt: "Google - Airbnb Assistants for Property Management",
+            },
+        ],
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Google | Airbnb Assistants for Property Management",
+        description:
+            "Manage your Airbnb properties with ease using our AI-driven assistants.",
+        images: ["/landing1.png"],
+    },
+    alternates: {
+        canonical: "/",
+    },
 };
 
 export default function RootLayout({
@@ -41,6 +76,21 @@ export default function RootLayout({
                 plusja.variable
             )}
         >
+            <head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "WebSite",
+                            name: "Airbnb Assistants for Property Management",
+                            url:
+                                process.env.NEXT_PUBLIC_SITE_URL ||
+                                "https://olwwdjt-google.vercel.app",
+                        }),
+                    }}
+                />
+            </head>
             <body>
                 <ThemeProvider>
                     <Header />
