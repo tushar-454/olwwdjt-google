@@ -25,7 +25,7 @@ export default function ScheduleMeetingBtn({
         >
             <Link
                 href={"#schedule-meeting"}
-                className="flex! items-center! justify-center! gap-2.5!"
+                className="inline-flex! items-center! justify-center! gap-2.5!"
             >
                 <span className="text-center text-[14px] leading-[100%] font-bold text-white">
                     Schedule a Meeting
