@@ -28,23 +28,22 @@ export default function ServiceCard({
                     />
                 </div>
                 <div className="flex flex-col gap-3.5">
-                    <h4 className="text-2xl leading-[125%] font-bold text-[#1E1E1E] sm:max-w-65 dark:text-[#EEEEEE]">
+                    <h3 className="text-2xl leading-[125%] font-bold text-[#1E1E1E] sm:max-w-65 dark:text-[#EEEEEE]">
                         {service.title}
-                    </h4>
+                    </h3>
                     <p className="text-sm leading-normal font-medium dark:text-[#BDBDBD]">
                         {service.description}
                     </p>
                 </div>
             </CardContent>
             <CardFooter>
-                <Link href={service.slug}>
-                    <Button
-                        variant="outline"
-                        className="w-full rounded-full border-primary px-5 text-primary"
-                    >
-                        Read More
-                    </Button>
-                </Link>
+                <Button
+                    asChild
+                    variant="outline"
+                    className="w-full rounded-full border-primary px-5 text-primary"
+                >
+                    <Link href={service.slug}>Read More</Link>
+                </Button>
             </CardFooter>
         </Card>
     );

@@ -31,9 +31,9 @@ export default function GetInTouch() {
                     />
                 </div>
                 <div className="flex flex-col items-center justify-center gap-2.5">
-                    <h4 className="text-center text-xl leading-7.5 font-bold">
+                    <h2 className="text-center text-xl leading-7.5 font-bold">
                         Still have Question
-                    </h4>
+                    </h2>
                     <p className="text-center text-lg leading-7 text-[#9C9C9C]">
                         Can&apos;t find the answer you&apos;re looking for?
                         Please chat to our friendly team.

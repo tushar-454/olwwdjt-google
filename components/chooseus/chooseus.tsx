@@ -16,9 +16,9 @@ export default function ChooseUs() {
             <Container className="grid max-w-310 grid-cols-1 gap-6.25 rounded-[33px] bg-primary/20 px-5 py-11 md:grid-cols-2 md:gap-20 lg:grid-cols-5">
                 {/* left part  */}
                 <div className="space-y-7 md:self-center md:pl-11 lg:col-span-2">
-                    <h3 className="text-4xl leading-tight font-bold">
+                    <h2 className="text-4xl leading-tight font-bold">
                         Few Reasons Why you Choose us?
-                    </h3>
+                    </h2>
                     <p className="text-sm leading-normal font-semibold">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore

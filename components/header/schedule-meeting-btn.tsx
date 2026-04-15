@@ -13,19 +13,24 @@ export default function ScheduleMeetingBtn({
     showAlways = false,
 }: ScheduleMeetingBtnProps) {
     return (
-        <Link
-            href={"#schedule-meeting"}
-            className={cn(
-                isMobile ? "mt-5 inline-block lg:hidden" : "hidden lg:block",
-                showAlways && "inline-block"
-            )}
+        <Button
+            asChild
+            className="flex h-12.5 items-center justify-center gap-2.5 rounded-[5px] px-4.5 py-6"
         >
-            <Button className="flex h-12.5 items-center justify-center gap-2.5 rounded-[5px] px-4.5 py-6">
+            <Link
+                href={"#schedule-meeting"}
+                className={cn(
+                    isMobile
+                        ? "mt-5 inline-block lg:hidden"
+                        : "hidden lg:block",
+                    showAlways && "inline-block"
+                )}
+            >
                 <span className="text-center text-[14px] leading-[100%] font-bold text-white">
                     Schedule a Meeting
                 </span>{" "}
                 <ArrowRightIcon size={32} />
-            </Button>
-        </Link>
+            </Link>
+        </Button>
     );
 }

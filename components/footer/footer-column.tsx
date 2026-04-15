@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function FooterColumn({ column }: { column: FooterColumns }) {
     return (
         <div className="md:justify-self-center">
-            <h4 className="leading-6 font-bold text-gray-900 dark:text-gray-50">
+            <h3 className="leading-6 font-bold text-gray-900 dark:text-gray-50">
                 {column}
-            </h4>
+            </h3>
             <ul className="mt-5">
                 {footerColumnsData[column].map((link) => (
                     <li

@@ -28,9 +28,9 @@ export default function ReviewsCard({
                     className="w-24 rounded-full md:w-60"
                 />
                 <div className="flex flex-col gap-1.5">
-                    <h4 className="text-xl leading-normal font-bold">
+                    <h3 className="text-xl leading-normal font-bold">
                         {review.name}
-                    </h4>
+                    </h3>
                     <p className="text-sm leading-normal font-medium">
                         {review.comment}
                     </p>

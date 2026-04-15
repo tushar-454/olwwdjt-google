@@ -17,7 +17,7 @@ export default function SectionHead({
 }: SectionHeadProps) {
     return (
         <div className="flex flex-col items-center gap-3.5 p-4">
-            <h1
+            <h2
                 data-aos="fade-up"
                 className={cn(
                     "text-center text-[32px] leading-normal font-bold",
@@ -25,7 +25,7 @@ export default function SectionHead({
                 )}
             >
                 {title} <span className="text-primary">{highlightedTitle}</span>
-            </h1>
+            </h2>
             <p
                 data-aos="fade-up"
                 className={cn(
