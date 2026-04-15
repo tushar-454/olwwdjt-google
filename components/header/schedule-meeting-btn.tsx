@@ -15,16 +15,17 @@ export default function ScheduleMeetingBtn({
     return (
         <Button
             asChild
-            className="flex h-12.5 items-center justify-center gap-2.5 rounded-[5px] px-4.5 py-6"
+            className={cn(
+                "h-12.5 rounded-[5px] px-4.5 py-6",
+                isMobile
+                    ? "mt-5 inline-block lg:hidden"
+                    : "hidden lg:inline-block",
+                showAlways && "inline-block"
+            )}
         >
             <Link
                 href={"#schedule-meeting"}
-                className={cn(
-                    isMobile
-                        ? "mt-5 inline-block lg:hidden"
-                        : "hidden lg:block",
-                    showAlways && "inline-block"
-                )}
+                className="flex! items-center! justify-center! gap-2.5!"
             >
                 <span className="text-center text-[14px] leading-[100%] font-bold text-white">
                     Schedule a Meeting
