@@ -27,7 +27,7 @@ export default function MobileMenu() {
                     </SheetTitle>
                     <SheetDescription className="mt-5">
                         <NavItems isMobile />
-                        <ScheduleMeetingBtn isMobile />
+                        <ScheduleMeetingBtn className="mt-5 inline-flex lg:hidden" />
                     </SheetDescription>
                 </SheetHeader>
             </SheetContent>
