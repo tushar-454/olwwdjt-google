@@ -185,8 +185,8 @@
         background-image:
             linear-gradient(0deg, #e5e5ea 2px, transparent 2px),
             linear-gradient(90deg, #e5e5ea 2px, transparent 2px);
-        background-size: 90px 90px;
-        background-position: 0 0;
+        background-size: 90px 80px;
+        background-position: 0 -10px;
     }
     .dark .grid-background {
         background-image:
