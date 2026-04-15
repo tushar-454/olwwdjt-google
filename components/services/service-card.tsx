@@ -40,7 +40,7 @@ export default function ServiceCard({
                 <Button
                     asChild
                     variant="outline"
-                    className="w-full rounded-full border-primary px-5 text-primary"
+                    className="rounded-full border-primary px-5 text-primary"
                 >
                     <Link href={service.slug}>Read More</Link>
                 </Button>
