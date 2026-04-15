@@ -20,6 +20,14 @@ A modern, responsive Next.js landing page for an Airbnb assistant/property manag
 - Theme support via `next-themes` with a keyboard toggle (`D`).
 - Fully typed local content sources in `db/*` for pricing, FAQs, services, tools, steps, and reviews.
 
+## ⚙️ Environment Variables
+
+Create a `.env.local` file in the root of the project and configure the following environment variables:
+
+```dotenv
+NEXT_PUBLIC_SITE_URL=production-site-url
+```
+
 ## 🚀 Getting Started
 
 ```bash
