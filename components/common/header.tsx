@@ -15,7 +15,7 @@ export default function Header() {
                 {/* nav items  */}
                 <NavItems />
                 {/* CTA  */}
-                <ScheduleMeetingBtn />
+                <ScheduleMeetingBtn className="hidden! lg:inline-flex!" />
             </Container>
         </header>
     );
