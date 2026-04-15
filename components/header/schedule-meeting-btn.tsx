@@ -4,28 +4,20 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 
 type ScheduleMeetingBtnProps = {
-    isMobile?: boolean;
-    showAlways?: boolean;
+    className?: string;
 };
 
 export default function ScheduleMeetingBtn({
-    isMobile = false,
-    showAlways = false,
+    className,
 }: ScheduleMeetingBtnProps) {
     return (
         <Button
             asChild
-            className={cn(
-                "h-12.5 rounded-[5px] px-4.5 py-6",
-                isMobile
-                    ? "mt-5 inline-block lg:hidden"
-                    : "hidden lg:inline-block",
-                showAlways && "inline-block"
-            )}
+            className={cn("h-12.5 rounded-[5px] px-4.5 py-6", className)}
         >
             <Link
                 href={"#schedule-meeting"}
-                className="inline-flex! items-center! justify-center! gap-2.5!"
+                className="inline-flex items-center justify-center gap-2.5"
             >
                 <span className="text-center text-[14px] leading-[100%] font-bold text-white">
                     Schedule a Meeting
