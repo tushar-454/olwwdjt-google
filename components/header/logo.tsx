@@ -9,6 +9,8 @@ export default function Logo() {
                 alt={"logo"}
                 width={125}
                 height={45}
+                priority
+                sizes="125px"
                 className="aspect-25/9"
             />
         </Link>

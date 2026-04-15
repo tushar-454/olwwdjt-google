@@ -9,6 +9,8 @@ export default function FloatingItems() {
                 alt="airbnb logo"
                 width={80}
                 height={80}
+                priority
+                sizes="80px"
                 className="shake-bottom absolute top-10 left-0"
             />
             {/* virbo logo  */}
@@ -17,6 +19,8 @@ export default function FloatingItems() {
                 alt="virbo logo"
                 width={80}
                 height={80}
+                priority
+                sizes="80px"
                 className="shake-up absolute bottom-20 left-0"
             />
             {/* booking logo  */}
@@ -25,6 +29,8 @@ export default function FloatingItems() {
                 alt="booking logo"
                 width={80}
                 height={80}
+                priority
+                sizes="80px"
                 className="shake-up absolute top-10 right-0"
             />
             {/* tripadvison logo */}
@@ -33,6 +39,8 @@ export default function FloatingItems() {
                 alt="tripadvison logo"
                 width={80}
                 height={80}
+                priority
+                sizes="80px"
                 className="shake-bottom absolute right-0 bottom-20"
             />
 
