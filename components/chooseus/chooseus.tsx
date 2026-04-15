@@ -35,7 +35,7 @@ export default function ChooseUs() {
                             </li>
                         ))}
                     </ul>
-                    <ScheduleMeetingBtn showAlways />
+                    <ScheduleMeetingBtn className="inline-flex" />
                 </div>
                 {/* right part  */}
                 <div className="md:self-center lg:col-span-3">
